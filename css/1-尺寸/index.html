@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .module {
+            width: 30%;
+            height: 100vh;
+            /* Use vh as a fallback for browsers that do not support Custom Properties */
+            /* height: calc(var(--vh, 1vh) * 100); */
+            margin: 0 auto;
+        }
+
+        .module__item {
+            /* align-items: center; */
+            /* display: flex; */
+            font-size:4rem;
+            height: 20%;
+            /* justify-content: center; */
+        }
+
+        .module__item:nth-child(odd) {
+            background-color: #fff;
+            color: #F73859;
+        }
+
+        .module__item:nth-child(even) {
+            background-color: #F73859;
+            color: #F1D08A;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="module">
+        <div class="module__item">20%</div>
+        <div class="module__item">40%</div>
+        <div class="module__item">60%</div>
+        <div class="module__item">80%</div>
+        <div class="module__item">100%</div>
+    </div>
+
+
+</body>
+
+</html>
