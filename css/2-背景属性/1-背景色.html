@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景色的用法</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            border:20px dotted black;
+        }
+        .box1{
+            background-color: yellow;
+        }
+        .box2{
+            background-color: #ffff00;
+        }
+        .box3{
+            background-color: rgba(255,255,0,1);
+        }
+        .box4{
+            background-color: hsla(60,100%,50%,1);
+        }
+    </style>
+</head>
+<body>
+    background-color: red;/*颜色值：英文单词*/
+    <div class="box box1"></div>
+    background-color: #ffff00;/*颜色值：十六进制*/
+    <div class="box box2"></div>
+    background-color: rgba(255,255,0,1);
+    <div class="box box3"></div>
+    background-color: hsla(60,100%,50%,1);
+    <div class="box box3"></div>
+</body>
+</html>

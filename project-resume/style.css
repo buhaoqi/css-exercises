@@ -1,218 +1,194 @@
 /************** 重置浏览器默认样式 *************/
 /* https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421 */
-
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-ul,
-dl,
-dd {
     margin: 0;
     padding: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'],
-ul {
-    list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 2;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-/****************全局样式**************/
-img{
-    width:50%;
+    box-sizing: border-box;
 }
 :root {
     --white: #fff;
-    --gray-100: #f7f7f7;
-    /* --gray-200: #e9ecef; */
-    /* --gray-300: #dee2e6; */
-    --gray-400: #ced4da;
-    --gray-500: #adb5bd;
-    /* --gray-600: #6c757d; */
-    /* --gray-700: #495057; */
-    --gray-800: #343a40;
-    /* --gray-900: #212529; */
+    --black-100: #f7f7f7;
+    --black-400: #ced4da;
+    --black-500: #adb5bd;
+    --black-800: #343a40;
     --black: #000;
-    --green:#00a78e;
+    --main-color:#00a78e;
+    --shadow-black-100:0 5px 15px rgba(0,0,0,0.2);
 }
-body,html{
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
     font-family: Helvetica,Arial,'PingFang SC','Hiragino Sans GB','Source Han Sans CN','Roboto,Microsoft Yahei','sans-serif';
     font-size:16px;
+    line-height: 1.5;
     overflow-x: hidden;
-    background-color: var(--gray-100) ;
-    color:var(--gray-800);
+    background-color: var(--black-100) ;
+    color:var(--black-800);
 }
-.container{
-    width:1200px;
-    margin:0 auto;
+h1{
+    font-size: 3rem;
 }
-.green{
-    background-color: var(--green);
-    color:var(--white);
+h2{
+    font-size: 2rem;
 }
-.green a{
-    color:var(--white);
+h3{
+    font-size: 1.5rem;
 }
-.section{
-    padding:80px 0;
-    min-height: 600px;
+ul{
+    list-style: none;
 }
-.section:nth-child(even){
-    background-color: var(--white);
-    color: var(--gray-800);
+a{
+    text-decoration: none;
+}
+img
+{
+    vertical-align: middle;
+}
+
+/****************全局样式**************/
+.small{
+    font-size: 0.875rem;
+}
+.bold{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
 }
 .flex{
     display: flex;
     align-items: center;
-}
-.section-title span{
-    color:var(--gray-500);
-}
-.section-title h2{
-    color:var(--green);
-}
-.center{
-    text-align: center;
+    flex-wrap: wrap;
 }
 .flexbasis50{
     flex-basis: 50%;
     border:1px solid red;
 }
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+.section{
+    padding:80px 0;
+    min-height: 100vh;
+}
+.row{
+    border:1px solid blue;
+}
+.section:nth-child(even){
+    background-color: var(--white);
+    color: var(--black-800);
+}
+.section-title span{
+    color:var(--black-500);
+}
+.section-title h2{
+    color:var(--main-color);
+}
 
 /****************header**************/
 header{
     position:fixed;
+    z-index:999;
     left:0;
     top:0;
     width:100%;
-    padding:10px 0;
-    height:80px;
-    z-index:10;
-}
-header .flex{
-    justify-content: space-around;
-    text-align: center;
-}
-header nav{
-    position: relative;
-}
-nav a{
-    flex-grow: 1;
-}
-header .col{
-    height:60px;
-    line-height: 60px;
-}
-header .col:nth-child(1){
-    /* background-color: gold; */
-    flex-grow:4;
-}
-header .col:nth-child(2){
+    padding:25px;
     /* background-color: pink; */
-    flex-grow:6;
 }
-header .logo i{
-    color:var(--green);
-    font-size: 2rem;
+header .row{
+    justify-content: space-between;
 }
-header .logo span{
-    color:var(--gray-800);
-    font-size: 1.5rem;
+header .logo{
+    /* background-color: red; */
+}
+header .logo a
+{
+    color: var(--main-color);
+}
+header .logo a i
+{
+    font-size: 2em;
+    padding-bottom:5px;
+}
+header .logo a span
+{
+    font-size: 1.5em;
+}
+header .navbar{
+    flex-basis:60%;
+    background-color: yellow;
+}
+header .navbar nav{
+    justify-content: space-between;
+    position:relative;
+}
+
+header nav a{
+    color: var(--white);
+    font-weight: 600;
+    padding: 10px 0;
+    background-color: blue;
 }
 header nav span{
     position: absolute;
-    left:0;
-    bottom:0;
-    width:120px;
-    height:3px;
-    background-color: var(--gray-800);
+    z-index: 9999;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    transition: all 0.3s ease-out 0s;
 }
-/****************登录区**************/
-main{
-    /* padding-top:80px; */
+header.sticky{
+    padding: 12px 25px;
+    background-color: var(--white);
+    box-shadow: var(--shadow-black-100);
 }
-#landing{
-    position: relative;
-    padding-top:160px;
+header.sticky nav a{
+    color: var(--main-color);
 }
-.landing-img img{
-    position: relative;
-    left:0;
-    bottom:-80px;
-    z-index:5;
+
+/*===== Home =====*/
+#home
+{
+    /*position: relative;*/
+    background-color: var(--black-100);
+    z-index: 1;
+    overflow-x: hidden;
 }
-.landing-bg{
-    position: absolute;
-    right:0;
-    top:0;
-    background-color: red;
-    width:50%;
-    height:100%;
-    z-index:0;
+#home .home-text h1{
+    letter-spacing: 4px;
+    color: var(--main-color);
 }
+#home .home-text{
+    
+}
+#home .home-img img{
+    width:40%;
+    position:relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

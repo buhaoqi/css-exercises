@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图重复性</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            border:20px dotted black;
+            background-image:url(./images/ins.png);
+        }
+        .box1{
+            background-repeat:repeat;
+        }
+        .box2{
+            background-repeat:repeat-x;
+        }
+        .box3{
+            background-repeat:repeat-y;
+        }
+        .box4{
+            background-repeat:no-repeat;
+        }
+        
+    </style>
+</head>
+<body>
+    background-color: red;/*颜色值：英文单词*/
+    <div class="box box1"></div>
+    background-color: #ffff00;/*颜色值：十六进制*/
+    <div class="box box2"></div>
+    background-color: #ffff00;/*颜色值：十六进制*/
+    <div class="box box3"></div>
+    background-color: #ffff00;/*颜色值：十六进制*/
+    <div class="box box4"></div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图尺寸</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            padding:20px;
+            border:20px dotted black;
+            background-color: red;
+            background-image: url('./images/dog.png');
+            background-repeat: no-repeat;
+        }
+        .box1{
+            background-size: auto;/*根据图片尺寸和纵横比自动计算*/
+        }
+        .box2{
+            background-size: cover;
+        }
+        .box3{
+            background-size: contain;
+        }
+        .box4{
+            background-size: 200px auto;
+        }
+    </style>
+</head>
+<body>
+    background-clip: border-box;/*允许背景覆盖到边框下面*/
+    <div class="box box1"></div>
+    background-clip: padding-box;/*允许背景覆盖到内边距下面*/
+    <div class="box box2"></div>
+    background-clip: content-box;/*允许背景覆盖到内容下面*/
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+</body>
+</html>
+
+<!-- 
+
+
+    CSS 中的 background-size 属性是最有用且最复杂的背景属性之一。您可以为此属性使用许多变体和不同的语法，所有这些都有不同的用例。这是一个基本示例：
+ -->
