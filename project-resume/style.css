@@ -51,24 +51,6 @@ img
 }
 
 /****************全局样式**************/
-.small{
-    font-size: 0.875rem;
-}
-.bold{
-    font-weight: bold;
-}
-.center{
-    text-align: center;
-}
-.flex{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.flexbasis50{
-    flex-basis: 50%;
-    border:1px solid red;
-}
 .container{
     width:1200px;
     margin:0 auto;
@@ -90,6 +72,25 @@ img
 .section-title h2{
     color:var(--main-color);
 }
+.small{
+    font-size: 0.875rem;
+}
+.bold{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flexbasis50{
+    flex-basis: 50%;
+    border:1px solid red;
+}
+
 
 /****************header**************/
 header{
@@ -173,8 +174,9 @@ header.sticky nav a{
     
 }
 #home .home-img img{
-    width:40%;
+    width:100%;
     position:relative;
+    bottom:-80px;
 }
 
 

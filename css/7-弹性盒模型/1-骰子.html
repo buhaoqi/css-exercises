@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            box-sizing: border-box;
+            width:400px;
+            height:400px;
+            margin:20px auto;
+            padding:20px;
+            border:1px solid black;
+            border-radius: 10%;
+            display: flex;
+        }
+        .c1{
+            justify-content: center;
+            align-items: center;
+            /* flex-wrap: wrap;
+            align-content: center; */
+        }
+        .c2{
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .c3{
+            justify-content: space-evenly;
+        }
+        .c3 .box2{
+            align-self:center;
+        }
+        .c3 .box3{
+            align-self:flex-end;
+        }
+        .c4{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap:30px;
+            align-items: center;
+        }
+        .c5{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            align-items:center;
+        }
+        .row{
+            flex:1 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .c5 .box3{
+            background-color: red;
+        }
+        .c6{
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box{
+            width: 100px;
+            height:100px;
+            border-radius: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container c1">
+        <div class="box box1"></div>
+    </div>
+    <div class="container c2">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+    <div class="container c3">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="container c4">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    <div class="container c5">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="row"><div class="box box3"></div></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+    <div class="container c6">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </div>
+</body>
+</html>
