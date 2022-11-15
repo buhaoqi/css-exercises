@@ -1,0 +1,131 @@
+/*  */
+:root{
+    --primary-color:#0185f2;
+    --white:#fff;
+    --black-100:#f6f6f6;
+    --black-300:#dcdcdc;
+    --black-500:#7d7d7d;
+    --black-800:#1e1e1e;
+    --black:#000;
+    --yellow:#dcd900;
+}
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+input,
+textarea {
+    outline: none
+}
+img {
+    vertical-align: bottom
+}
+a{
+    text-decoration: none;
+    color:var(--black);
+}
+a:hover{
+    color:var(--primary-color);
+}
+
+/* 全局 */
+html,body{
+    font-family: Helvetica, Arial, PingFang SC, Hiragino Sans GB, Source Han Sans CN, Roboto, Microsoft Yahei, sans-serif;
+    /* font-size:62.5%; */
+    font-size:16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color:var(--black-800);
+    background-color: var(--white);
+}
+#app{
+    color: var(--black);
+    background-color: transparent;
+    width:100%;
+}
+.container{
+    max-width:1130px;
+    margin:0 auto;
+}
+#header{
+
+}
+#header a{
+    color:var(--black);
+    font-weight:700;
+}
+#header a:hover,#header a.active{
+    color:var(--primary-color);
+}
+#main-body{
+
+}
+#sub-nav{
+    background-color: var(--black-100);
+}
+#sub-nav a{
+    color:var(--black-800);
+}
+#sub-nav a:hover{
+    color:var(--black);
+}
+#toutiao{
+
+}
+#main-content{
+
+}
+#news-list{
+
+}
+#sidebar{
+
+}
+#footer{
+    color:var(--black-500);
+}
+#footer a{
+    color:var(--black-500);
+}
+#footer a:hover{
+    color:var(--white);
+}
+#footer .footer-nav{
+    background-color: var(--black-800);
+}
+#footer .footer-copyright{
+    background-color: var(--black);
+}
+.block-balck{
+    background-color: var(--black);
+}
+.block-gray{
+    background-color: var(--black-300);
+}
+/*  */
+
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+
+/*  */
+
+
+
+/*  */
+
+
+
+/*  */

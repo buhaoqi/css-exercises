@@ -1,892 +1,343 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="webkit" name="renderer" />
-    <title>极客公园-Geek Things Up!</title>
-    </script>
-    <link rel="stylesheet" href="style.css">
+    <title>防极客公园-Geek Things Up!</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div id="app">
+        <!-- header开始 -->
         <div id="header">
-            <header class="header hidden-xs">
-                <div class="container relative">
+            <header class="hide-small">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo">
+                            <a href="javascript:">
+                                <img src="./images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <nav>
+                            <a href="javascript:" class="active">资讯</a>
+                            <a href="javascript:">活动</a>
+                            <a href="javascript:">前言社</a>
+                        </nav>
+                        <a href="javascript:">
+                            <i class="iconfont"></i>
+                        </a>
+                        <a href="javascript:">登录</a>
+                    </div>
+                </div>
+            </header>
+            <header class="hide-big">
+                <div class="container">
+                    <a href="javascript:">
+                        <i class="iconfont"></i>
+                    </a>
                     <div class="logo">
-                        <a href="/" data-track-category="site.logo" class="active">
-                            <img src="//imgslim.geekpark.net/image/newgeekpark/copyright.png" class="logo-img">
+                        <a href="javascript:">
+                            <img src="./images/logo.png" alt="">
                         </a>
                     </div>
-                    <nav class="nav">
-                        <a href="/" class="active">资讯</a>
-                        <a href="https://events.geekpark.net" target="_blank">活动</a>
-                        <a href="https://f.geekpark.net" target="_blank">前沿社</a>
-                    </nav>
-                    <a id="search-btn" href="javascript:;"  class="search-btn">
-                        <i class="iconfont icon-search"></i>
-                    </a>
-                    <a class="signin">登录</a>
-                </div>
-            </header>
-            <header class="m-header hidden-notxs">
-                <a class="m-button sidebar-button open">
-                    <i class="iconfont icon-menu"></i>
-                </a>
-                <div class="logo">
-                    <a href="/">
-                        <img src="//imgslim.geekpark.net/image/newgeekpark/copyright.png" class="logo-img">
+                    <a href="javascript:">
+                        <i class="iconfont"></i>
                     </a>
                 </div>
-                <a class="m-button search-btn search-icon-anim">
-                    <i class="iconfont icon-search"></i>
-                </a>
             </header>
         </div>
-        <div id="index">
-            
-            <div class="main-content">
+        <!-- header结束 -->
+        <!-- main-body开始 -->
+        <div id="main-body">
+            <!-- 二级导航开始 -->
+            <section id="sub-nav">
                 <div class="container">
-                    <div class="article-list">
-                        <article class="article-item">
-                            <a href="/news/311131" target="" class="img-cover-wrap">
-                                <div class="img-cover">
-                                    <img w="450" h="214">
-                                    <div class="play" style="display:none;">
-                                        <i class="iconfont icon-play"></i><span></span>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <nav>
+                            <a href="javascript:">
+                                极客之选
+                                <span>极客之选</span>
                             </a>
-                            <div class="article-info">
-                                <a href="/column/86" target="" class="category-tag">今日看点</a>
-                                <div class="article-time">4 小时前</div>
-                                <a href="/news/311131">
-                                    <h3 class="multiline-text-overflow">Up&amp;Coming，极客公园创新大会 2023 来了！</h3>
-                                </a>
-                                <p class="multiline-text-overflow">记录与见证科技行业的 2022。</p>
-                            </div>
-                            <div class="article-meta hidden-xs">
-                                <a href="/users/5dc0833d-68ea-4c23-8a8a-85d8d8d96102" target="" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>
-                                    极客公园
-                                </a>
-                            </div>
-                            <div class="article-meta hidden-notxs">
-                                <a href="/news/311131#comment" style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/311042" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="学习马斯克好榜样，硅谷裁员「理直气壮」 /news/311042" class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
+                            <a href="javascript:">
+                                产品观察
+                                <span>产品观察</span>
                             </a>
-                            <div class="article-info"><a href="/column/86" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="今日看点"
-                                    class="category-tag">今日看点</a>
-                                <div class="article-time">10 小时前</div><a href="/news/311042" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="学习马斯克好榜样，硅谷裁员「理直气壮」 /news/311042">
-                                    <h3 class="multiline-text-overflow">学习马斯克好榜样，硅谷裁员「理直气壮」</h3>
-                                </a>
-                                <p class="multiline-text-overflow">裁员人数以「万」计，加州提前入冬。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/cc7b47a8-05f9-418c-9677-a655e8756fde"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="Jesse" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>Jesse
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/311042#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：学习马斯克好榜样，硅谷裁员「理直气壮」" style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/311041" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="特斯拉回应潮州车辆失控致死事件；Twitter 8 美元付费服务紧急叫停；富士康印度两年内计划招 5 万余人 /news/311041"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
+                            <a href="javascript:">
+                                极客出行
+                                <span>极客出行</span>
                             </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">15 小时前</div><a href="/news/311041" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="特斯拉回应潮州车辆失控致死事件；Twitter 8 美元付费服务紧急叫停；富士康印度两年内计划招 5 万余人 /news/311041">
-                                    <h3 class="multiline-text-overflow">特斯拉回应潮州车辆失控致死事件；Twitter 8 美元付费服务紧急叫停；富士康印度两年内计划招
-                                        5 万余人</h3>
-                                </a>
-                                <p class="multiline-text-overflow">工信部：2021 年我国虚拟现实投融资规模涨幅超过 100%；个人电脑出货量下滑，PC
-                                    供应链看淡明年市场表现</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/5aa15040-cd5c-4524-a205-9a6634a90d2d"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="李晓蕾" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>李晓蕾
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/311041#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：特斯拉回应潮州车辆失控致死事件；Twitter 8 美元付费服务紧急叫停；富士康印度两年内计划招 5 万余人"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <!---->
-                        <!---->
-                        <article class="article-item"><a href="/news/311040" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="TikTok 广告收入预期下调至 100 亿美元；华为发布首款智能观影眼镜 Vision Glass；卡塔尔用机器人驯骆驼 /news/311040"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
+                            <a href="javascript:">
+                                顶楼Topview
+                                <span>顶楼Topview</span>
                             </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/13</div><a href="/news/311040" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="TikTok 广告收入预期下调至 100 亿美元；华为发布首款智能观影眼镜 Vision Glass；卡塔尔用机器人驯骆驼 /news/311040">
-                                    <h3 class="multiline-text-overflow">TikTok 广告收入预期下调至 100 亿美元；华为发布首款智能观影眼镜 Vision
-                                        Glass；卡塔尔用机器人驯骆驼</h3>
-                                </a>
-                                <p class="multiline-text-overflow">全新 Android Auto UI
-                                    用户界面开放公测；图森未来将由股东投票罢免所有独立董事；苹果卫星紧急求救服务 11 月底上线。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/f6625ea2-0c7b-42eb-af1b-3104f45bbdab"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="陈晨" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>陈晨
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>1</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/311040#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：TikTok 广告收入预期下调至 100 亿美元；华为发布首款智能观影眼镜 Vision Glass；卡塔尔用机器人驯骆驼"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/311037" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="「入境熔断」取消，国际机票搜索暴涨 448%；魅族发布首款车机系统；《流浪地球 2》主创亮相，刘慈欣监制 /news/311037"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
+                            <a href="javascript:">
+                                挖App
+                                <span>挖App</span>
                             </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/12</div><a href="/news/311037" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="「入境熔断」取消，国际机票搜索暴涨 448%；魅族发布首款车机系统；《流浪地球 2》主创亮相，刘慈欣监制 /news/311037">
-                                    <h3 class="multiline-text-overflow">「入境熔断」取消，国际机票搜索暴涨 448%；魅族发布首款车机系统；《流浪地球
-                                        2》主创亮相，刘慈欣监制</h3>
-                                </a>
-                                <p class="multiline-text-overflow">巴菲特再减持比亚迪套现逾 11 亿港元；天猫双十一成绩稳中向好；苹果市值单日飙升近 2000
-                                    亿美元；Copilot 测试新功能：嘿，GitHub！</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/f19e54ed-bd1b-4d7a-b765-a523e4d3c7ed"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="Lilyann" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>Lilyann
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/311037#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：「入境熔断」取消，国际机票搜索暴涨 448%；魅族发布首款车机系统；《流浪地球 2》主创亮相，刘慈欣监制"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310948" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="2022 北京车展停办；马斯克警告员工：推特可能破产；深圳成立元宇宙研究院 /news/310948"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
+                            <a href="javascript:">
+                                图赏
+                                <span>图赏</span>
                             </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/11</div><a href="/news/310948" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="2022 北京车展停办；马斯克警告员工：推特可能破产；深圳成立元宇宙研究院 /news/310948">
-                                    <h3 class="multiline-text-overflow">2022 北京车展停办；马斯克警告员工：推特可能破产；深圳成立元宇宙研究院</h3>
-                                </a>
-                                <p class="multiline-text-overflow">歌尔股份：公司存在业绩预告修正的可能；FTX 面临 80 亿美元资金缺口，CEO
-                                    表示未来一周将筹措资金；工信部：区块链国际标准化工作再获新突破</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/80168842-af41-472c-a10b-f728d72b97e1"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="Shirley" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>Shirley
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>1</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310948#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：2022 北京车展停办；马斯克警告员工：推特可能破产；深圳成立元宇宙研究院"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310945" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="从线上 K 歌到元宇宙，「实时互动」的八年进化 /news/310945" class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
+                            <a href="javascript:">
+                                行业资讯
+                                <span>行业资讯</span>
                             </a>
-                            <div class="article-info"><a href="/column/179" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="综合报道"
-                                    class="category-tag">综合报道</a>
-                                <div class="article-time">2022/11/10</div><a href="/news/310945" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="从线上 K 歌到元宇宙，「实时互动」的八年进化 /news/310945">
-                                    <h3 class="multiline-text-overflow">从线上 K 歌到元宇宙，「实时互动」的八年进化</h3>
-                                </a>
-                                <p class="multiline-text-overflow">从 RTC 到 RTE，一个「基建」公司的历史视角。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/d5a62e86-7f3a-4461-a014-7e09b8774a79"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="郑玥" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>郑玥
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>1</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310945#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：从线上 K 歌到元宇宙，「实时互动」的八年进化" style="display:none;">0条评论</a>
-                            </div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310892" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="这家公司，造出了《万神殿》里面的技术 /news/310892" class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/179" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="综合报道"
-                                    class="category-tag">综合报道</a>
-                                <div class="article-time">2022/11/10</div><a href="/news/310892" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="这家公司，造出了《万神殿》里面的技术 /news/310892">
-                                    <h3 class="multiline-text-overflow">这家公司，造出了《万神殿》里面的技术</h3>
-                                </a>
-                                <p class="multiline-text-overflow">屏幕里展示的一切，都能被记录和回溯了。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/434be828-a25f-4fa2-9f31-88b5e8fba79e"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="geekerdeng" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>geekerdeng
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310892#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：这家公司，造出了《万神殿》里面的技术" style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310852" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="Meta 裁员 1 万人，小扎：我的错；亚马逊市值蒸发 1 万亿美元；推特拒绝特斯拉负面广告 /news/310852"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/10</div><a href="/news/310852" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="Meta 裁员 1 万人，小扎：我的错；亚马逊市值蒸发 1 万亿美元；推特拒绝特斯拉负面广告 /news/310852">
-                                    <h3 class="multiline-text-overflow">Meta 裁员 1 万人，小扎：我的错；亚马逊市值蒸发 1 万亿美元；推特拒绝特斯拉负面广告
-                                    </h3>
-                                </a>
-                                <p class="multiline-text-overflow">传唱片公司向字节跳动施压，要求 TikTok
-                                    分享广告收入；歌尔股份回应被「踢出果链」：是谣传；任天堂表示未来会重新考虑 Switch 定价</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/d5a62e86-7f3a-4461-a014-7e09b8774a79"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="郑玥" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>郑玥
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310852#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：Meta 裁员 1 万人，小扎：我的错；亚马逊市值蒸发 1 万亿美元；推特拒绝特斯拉负面广告"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310847" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="我们想象的 AI，也许已经过时了 /news/310847" class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/179" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="综合报道"
-                                    class="category-tag">综合报道</a>
-                                <div class="article-time">2022/11/09</div><a href="/news/310847" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="我们想象的 AI，也许已经过时了 /news/310847">
-                                    <h3 class="multiline-text-overflow">我们想象的 AI，也许已经过时了</h3>
-                                </a>
-                                <p class="multiline-text-overflow">你的下一个同事，也许不是人。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/cc15a5c4-c524-4b91-a808-9334b9380c14"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="拉风的极客" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>拉风的极客
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>1</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310847#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：我们想象的 AI，也许已经过时了" style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310780" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="加密交易所大战结束，币安收购 FTX；传歌尔遭苹果「砍单」耳机生产；万维网创始人：Web3 根本不是 Web /news/310780"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/09</div><a href="/news/310780" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="加密交易所大战结束，币安收购 FTX；传歌尔遭苹果「砍单」耳机生产；万维网创始人：Web3 根本不是 Web /news/310780">
-                                    <h3 class="multiline-text-overflow">加密交易所大战结束，币安收购 FTX；传歌尔遭苹果「砍单」耳机生产；万维网创始人：Web3
-                                        根本不是 Web</h3>
-                                </a>
-                                <p class="multiline-text-overflow">苹果新专利公布：可基于手势操控车辆；小鹏汽车组织架构调整接近尾声，已新任命 CEO 助理；特斯拉三季度净利
-                                    32.9 亿美元，首次单季净利润超越丰田。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/ad1136dd-5fb4-488b-adb9-a1fb9476c7e2"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="雪小顽" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>雪小顽
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310780#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：加密交易所大战结束，币安收购 FTX；传歌尔遭苹果「砍单」耳机生产；万维网创始人：Web3 根本不是 Web"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310705" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="马斯克接手一周，推特用户增长创新高；动视暴雪三季度净利下降 3 成；30 万元 Web3 手机卖断货 /news/310705"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/08</div><a href="/news/310705" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="马斯克接手一周，推特用户增长创新高；动视暴雪三季度净利下降 3 成；30 万元 Web3 手机卖断货 /news/310705">
-                                    <h3 class="multiline-text-overflow">马斯克接手一周，推特用户增长创新高；动视暴雪三季度净利下降 3 成；30 万元 Web3
-                                        手机卖断货</h3>
-                                </a>
-                                <p class="multiline-text-overflow">Meta 预计本周启动大裁员；
-                                    Adobe 将对潘通色收费，不掏钱特定颜色直接变黑；
-                                    白皮书：截至 2021 年，中国数字经济规模占 GDP 比重为 39.8%；
-                                    SEMI：预计今年全球硅晶圆出货量同比增长 4.8%</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/dba0b77e-de2c-4d65-aba5-411bd120965a"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="宛辰" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>宛辰
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310705#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：马斯克接手一周，推特用户增长创新高；动视暴雪三季度净利下降 3 成；30 万元 Web3 手机卖断货"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310644" target="" data-event-action="view"
-                                data-event-category="article-list.cover" data-event-label="Jony Ive，离开苹果之后 /news/310644"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/179" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="综合报道"
-                                    class="category-tag">综合报道</a>
-                                <div class="article-time">2022/11/07</div><a href="/news/310644" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="Jony Ive，离开苹果之后 /news/310644">
-                                    <h3 class="multiline-text-overflow">Jony Ive，离开苹果之后</h3>
-                                </a>
-                                <p class="multiline-text-overflow">With Love From Apple.</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/034c04d1-da94-4d56-9008-927cd8e4afae"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="美漪" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>美漪
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>3</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310644#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：Jony Ive，离开苹果之后" style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310591" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="国产卫星通信获超 500Mbps 速率；苹果语音助手仅说「Siri」即唤醒；微软计划复活《星际争霸》 /news/310591"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/07</div><a href="/news/310591" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="国产卫星通信获超 500Mbps 速率；苹果语音助手仅说「Siri」即唤醒；微软计划复活《星际争霸》 /news/310591">
-                                    <h3 class="multiline-text-overflow">国产卫星通信获超 500Mbps
-                                        速率；苹果语音助手仅说「Siri」即唤醒；微软计划复活《星际争霸》</h3>
-                                </a>
-                                <p class="multiline-text-overflow">The Boring Company 宣布将启动「超级高铁」全面测试；蔚来第 1200
-                                    座换电站正式上线；微软将为 Linux 带来嵌套式虚拟化支持；</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/034c04d1-da94-4d56-9008-927cd8e4afae"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="美漪" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>美漪
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310591#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：国产卫星通信获超 500Mbps 速率；苹果语音助手仅说「Siri」即唤醒；微软计划复活《星际争霸》"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item video"><a href="/news/310589" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="吉利首次进入欧盟市场；B站架构调整，陈睿接管游戏业务；中国智能制造首倡者杨叔子逝世 /news/310589"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:;"><i class="iconfont icon-play"></i><span></span>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/06</div><a href="/news/310589" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="吉利首次进入欧盟市场；B站架构调整，陈睿接管游戏业务；中国智能制造首倡者杨叔子逝世 /news/310589">
-                                    <h3 class="multiline-text-overflow">吉利首次进入欧盟市场；B站架构调整，陈睿接管游戏业务；中国智能制造首倡者杨叔子逝世</h3>
-                                </a>
-                                <p class="multiline-text-overflow">新一代无线短距通信技术星闪 1.0 系列标准正式发布；
-                                    iPod 之父托尼·法德尔加入 Arm 公司董事会；
-                                    华为钱包将上线电子印章服务，支持金融交易、电子政务、电子合同签署
-                                </p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/1697578e-ce6e-4fa0-8091-425389691541"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="陈姚戈" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>陈姚戈
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310589#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：吉利首次进入欧盟市场；B站架构调整，陈睿接管游戏业务；中国智能制造首倡者杨叔子逝世"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310582" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="中国卫星导航总产值 4700 亿元；马斯克回应广告商暂停推特投放；苹果发起「挑战上岛」活动 | 极客早知道 /news/310582"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/05</div><a href="/news/310582" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="中国卫星导航总产值 4700 亿元；马斯克回应广告商暂停推特投放；苹果发起「挑战上岛」活动 | 极客早知道 /news/310582">
-                                    <h3 class="multiline-text-overflow">中国卫星导航总产值 4700 亿元；马斯克回应广告商暂停推特投放；苹果发起「挑战上岛」活动 |
-                                        极客早知道</h3>
-                                </a>
-                                <p class="multiline-text-overflow">宁德时代回应限制理想汽车使用第二供应商；
-                                    支付宝正式接入鸿蒙生态；
-                                    HBO 将在第四季结束后停止拍摄《西部世界》；
-                                    OPPO 自研智慧跨端系统「潘塔纳尔」将首次融合 Matter 协议</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/f7f345cb-bf1f-447e-964e-35915027f0ca"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="鱼三隹" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>鱼三隹
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310582#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：中国卫星导航总产值 4700 亿元；马斯克回应广告商暂停推特投放；苹果发起「挑战上岛」活动 | 极客早知道"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310518" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="马斯克一周，Twitter 的十年 /news/310518" class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/179" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="综合报道"
-                                    class="category-tag">综合报道</a>
-                                <div class="article-time">2022/11/04</div><a href="/news/310518" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="马斯克一周，Twitter 的十年 /news/310518">
-                                    <h3 class="multiline-text-overflow">马斯克一周，Twitter 的十年</h3>
-                                </a>
-                                <p class="multiline-text-overflow">Make Twitter Great Agian，or Not.</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/034c04d1-da94-4d56-9008-927cd8e4afae"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="美漪" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>美漪
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>3</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310518#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：马斯克一周，Twitter 的十年" style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310482" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="马斯克要求推特员工「坐班」；苹果自研基带不顺，高通拿下明年 iPhone 芯片订单；天涯社区被执行，创始人限高 /news/310482"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/74" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="极客早知道"
-                                    class="category-tag">极客早知道</a>
-                                <div class="article-time">2022/11/04</div><a href="/news/310482" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="马斯克要求推特员工「坐班」；苹果自研基带不顺，高通拿下明年 iPhone 芯片订单；天涯社区被执行，创始人限高 /news/310482">
-                                    <h3 class="multiline-text-overflow">马斯克要求推特员工「坐班」；苹果自研基带不顺，高通拿下明年 iPhone
-                                        芯片订单；天涯社区被执行，创始人限高</h3>
-                                </a>
-                                <p class="multiline-text-overflow">宝马集团第三季度营收 371.8 亿欧元，同比增长 35.3%
-                                    比亚迪 10 月销量再破 20 万辆，市占率或超 30%
-                                    美国司法部对 Adobe 收购 Figma 交易展开反垄断调查
-                                </p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/cc7b47a8-05f9-418c-9677-a655e8756fde"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="Jesse" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>Jesse
-                                </a>
-                                <div class="source-right">
-                                    <!---->
-                                    <!---->
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310482#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：马斯克要求推特员工「坐班」；苹果自研基带不顺，高通拿下明年 iPhone 芯片订单；天涯社区被执行，创始人限高"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310432" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="雷鸟 Air 1S 体验评测：不仅仅是懒人神器，更是全场景的随身「巨幕」 /news/310432"
-                                class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/179" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="综合报道"
-                                    class="category-tag">综合报道</a>
-                                <div class="article-time">2022/11/03</div><a href="/news/310432" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="雷鸟 Air 1S 体验评测：不仅仅是懒人神器，更是全场景的随身「巨幕」 /news/310432">
-                                    <h3 class="multiline-text-overflow">雷鸟 Air 1S 体验评测：不仅仅是懒人神器，更是全场景的随身「巨幕」</h3>
-                                </a>
-                                <p class="multiline-text-overflow">这是一款躺平可追剧，差旅可办公的随身「巨幕」。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/ae4e9d8b-d097-4944-8e9b-3d162d0f5647"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="谁是大英雄" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>谁是大英雄
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>1</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310432#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：雷鸟 Air 1S 体验评测：不仅仅是懒人神器，更是全场景的随身「巨幕」"
-                                    style="display:none;">0条评论</a></div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <article class="article-item"><a href="/news/310418" target="" data-event-action="view"
-                                data-event-category="article-list.cover"
-                                data-event-label="打工人抛弃办公室，微软丢掉「Office」 /news/310418" class="img-cover-wrap">
-                                <div class="img-cover"><img w="450" h="214">
-                                    <div class="play" style="display:none;"><i
-                                            class="iconfont icon-play"></i><span></span></div>
-                                </div>
-                            </a>
-                            <div class="article-info"><a href="/column/179" target="" data-event-action="view"
-                                    data-event-category="article-list.category-link" data-event-label="综合报道"
-                                    class="category-tag">综合报道</a>
-                                <div class="article-time">2022/11/03</div><a href="/news/310418" target=""
-                                    data-event-action="view" data-event-category="article-list.title"
-                                    data-event-label="打工人抛弃办公室，微软丢掉「Office」 /news/310418">
-                                    <h3 class="multiline-text-overflow">打工人抛弃办公室，微软丢掉「Office」</h3>
-                                </a>
-                                <p class="multiline-text-overflow">关键问题不是办公室在哪，而是「人」在哪。</p>
-                            </div>
-                            <div class="article-meta hidden-xs"><a href="/users/cc7b47a8-05f9-418c-9677-a655e8756fde"
-                                    target="" data-event-action="view" data-event-category="article-list.author"
-                                    data-event-label="Jesse" class="article-author">
-                                    <div class="img-box"><img w="26" h="26"></div>Jesse
-                                </a>
-                                <div class="source-right">
-                                    <!----><i class="iconfont icon-like"></i><span>1</span>
-                                </div>
-                            </div>
-                            <div class="article-meta hidden-notxs"><a href="/news/310418#comment"
-                                    data-event-action="view" data-event-category="article-list.comment"
-                                    data-event-label="评论数：0 文章：打工人抛弃办公室，微软丢掉「Office」" style="display:none;">0条评论</a>
-                            </div>
-                            <div class="clearfix"></div>
-                        </article>
-                        <div class="tac"><a class="load-more">
-                                <div class="loading-article"></div><span>加载更多</span>
-                            </a></div>
-                    </div>
-                    <div class="article-sidebar">
-                        <!---->
-                        <div class="hot-news" data-v-1d0baef2>
-                            <h3 data-v-1d0baef2>七日热门</h3>
-                        </div>
-                        <div class="idle-news" data-v-7872fc5a>
-                            <h3 data-v-7872fc5a>行业资讯</h3>
-                        </div>
-                        <div class="topics" data-v-07064c69>
-                            <h3 data-v-07064c69>专题</h3>
-                            <article data-track-category="topics" data-track-item="a.topic-card" class="news-item"
-                                data-v-07064c69></article>
-                        </div>
-                        <!---->
+                        </nav>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- 二级导航结束 -->
+            <!-- 头条开始 -->
+            <section id="toutiao">
+                <div class="container">
+                    <div class="tt-item">
+                        <a href="#">
+                            <div class="tt-img">
+                                <img src="./images/tt/tt5.jpg" alt="">
+                            </div>
+                            <div class="tt-text">
+                                <h2>Up&Coming，极客公园创新大会 2023 来了！</h2>
+                                <p>记录与见证科技行业的2022。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tt-item">
+                        <a href="">
+                            <div class="tt-img">
+                                <img src="./images/tt/tt1.jpg" alt="">
+                            </div>
+                            <div class="tt-text">
+                                <h2>Up&Coming，极客公园创新大会 2023 来了！</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tt-item">
+                        <a href="">
+                            <div class="tt-img">
+                                <img src="./images/tt/tt2.jpg" alt="">
+                            </div>
+                            <div class="tt-text">
+                                <h2>学习马斯克好榜样，硅谷裁员「理直气壮」</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tt-item">
+                        <a href="">
+                            <div class="tt-img">
+                                <img src="./images/tt/tt3.jpg" alt="">
+                            </div>
+                            <div class="tt-text">
+                                <h2>从线上 K 歌到元宇宙，「实时互动」的八年进化</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tt-item">
+                        <a href="">
+                            <div class="tt-img">
+                                <img src="./images/tt/tt4.jpg" alt="">
+                            </div>
+                            <div class="tt-text">
+                                <h2>这家公司，造出了《万神殿》里面的技术</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- 头条结束 -->
+            <!-- 主要内容开始 -->
+            <section id="main-content">
+                <div class="container">
+                    <!-- 新闻列表开始 -->
+                    <main id="news-list">
+                        <article class="news-item">
+                            <div class="row">
+                                <div class="col news-item-img">
+                                    <a href="">
+                                        <img src="./images/n1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col news-item-text">
+                                    <div>
+                                        <a href="" class="block-gray">今日看点</a>
+                                        <span>14小时前</span>
+                                    </div>
+                                    <h2>Up&Coming，极客公园创新大会 2023 来了！</h2>
+                                    <p>记录与见证科技行业的 2022。</p>
+                                    <div>
+                                        <a href="">
+                                            <img src="./images/icons/100000333.jpeg" alt="">
+                                            <span>极客公园</span>
+                                        </a>
+                                        <i class="iconfont"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="news-item">
+                            <div class="row">
+                                <div class="col news-item-img">
+                                    <a href="">
+                                        <img src="./images/n1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col news-item-text">
+                                    <div>
+                                        <a href="">今日看点</a>
+                                        <span>14小时前</span>
+                                    </div>
+                                    <h2>Up&Coming，极客公园创新大会 2023 来了！</h2>
+                                    <p>记录与见证科技行业的 2022。</p>
+                                    <div>
+                                        <a href="">
+                                            <img src="./images/icons/100000333.jpeg" alt="">
+                                            <span>极客公园</span>
+                                        </a>
+                                        <i class="iconfont"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </main>
+                    <!-- 新闻列表结束 -->
+                    <!-- 边栏开始 -->
+                    <aside id="sidebar">
+                        <div class="hot-news">
+                            <h3>七日热门</h3>
+                            <div class="hot-news-list">
+                                <div class="hot-news-item">
+                                    <div class="hot-news-item-img">
+                                        <img src="./images/n25.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <p>Meta 裁员 1 万人，小扎：我的错；亚马逊市值蒸发 1 万亿美元；推特拒绝</p>
+                                </div>
+                                <div class="hot-news-item">
+                                    <div class="hot-news-item-img">
+                                        <img src="./images/n25.png" alt="">
+                                        <span>1</span>
+                                    </div>
+                                    <p>加密交易所大战结束，币安收购 FTX；传歌尔遭苹果「砍单」耳机生产；万维</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="it-news">
+                            <h3>行业资讯</h3>
+                            <div class="it-news-list">
+                                <div class="row it-news-item">
+                                    <div>
+                                        <img src="./images/n26.png" alt="">
+                                    </div>
+                                    <p>
+                                        车企都想造机器人？岚图发布 ESSA+SOA 智能电动仿生体
+                                    </p>
+                                </div>
+                                <div class="row it-news-item">
+                                    <div>
+                                        <img src="./images/n26.png" alt="">
+                                    </div>
+                                    <p>
+                                        车企都想造机器人？岚图发布 ESSA+SOA 智能电动仿生体
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special-news">
+                            <h3>专题</h3>
+                            <div class="special-news-list">
+                                <div><img src="./images/n35.jpg" alt=""></div>
+                                <div><img src="./images/n36.jpg" alt=""></div>
+                                <div><img src="./images/n37.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- 边栏结束 -->
+                </div>
+            </section>
+            <!-- 主要内容结束 -->
         </div>
-        <div id="feedback">
-            <div class="container clear">
-                <div class="wr-fx">
-                    <div class="fixed-tools"><a class="tools-item tools-erweima"><i
-                                class="iconfont icon-qrcode"></i></a>
-                        <div class="qr-group">
-                            <div class="tabs"><a class="tab active">极客公园</a><a class="tab">极客之选</a><a
-                                    class="tab">顶楼TopView</a></div>
-                            <div class="panels">
-                                <div class="panel active">
-                                    <div class="img"><img src="//imgslim.geekpark.net/image/newgeekpark/qr_geekpark.jpg"
-                                            alt="极客公园">
-                                        <p>用极客视角，追踪你不可错过的科技圈。</p>
-                                    </div>
+        <!-- main-body结束 -->
+        <!-- footer开始 -->
+        <footer id="footer">
+            <div class="footer-nav">
+                <div class="container">
+                    <section class="contact">
+                        <h4>联系我们</h4>
+                        <p>联系电话：8610-84599761</p>
+                        <p>联系邮箱：<a href="mailto:contact@geekpark.net">contact@geekpark.net</a></p>
+                        <p>公司地址：北京市朝阳区酒仙桥路4号751 D·Park<br>正东集团院内 C8座105室 极客公园</p>
+                        <div>
+                            <span>关注我们：</span>
+                            <a href="//weibo.com/geekpark" target="_blank">
+                                <i class="iconfont icon-weibo"></i>
+                            </a>
+                            <a href="https://www.zhihu.com/org/geekpark-16" target="_blank">
+                                <i class="iconfont icon-zhihu"></i>
+                            </a>
+                            <a href="javascript:;" class="share-btn wechat relative">
+                                <i class="iconfont icon-wechat"></i>
+                                <div class="wechat-qr triangle-down">
+                                    <img src="./images/erweima/100002146.qr_geekpark.jpg" alt="极客公园微信公众平台">
                                 </div>
-                                <div class="panel">
-                                    <div class="img"><img
-                                            src="//imgslim.geekpark.net/image/newgeekpark/qr_geekchoice.jpg" alt="极客之选">
-                                        <p>新鲜、有趣的硬件产品，第一时间为你呈现。</p>
-                                    </div>
-                                </div>
-                                <div class="panel">
-                                    <div class="img"><img src="//imgslim.geekpark.net/image/newgeekpark/qr_topview.jpg"
-                                            alt="顶楼">
-                                        <p>关注前沿科技，发表具有科技的商业洞见。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><a data-tooltip="意见反馈" class="tools-item"><i class="iconfont icon-feedback"></i></a><a
-                            data-tooltip="返回顶部" class="tools-item gotop"><i class="iconfont icon-gotop"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="el-dialog__wrapper" style="display:none;">
-                <div class="el-dialog" style="margin-top:15vh;">
-                    <div class="el-dialog__header"><span class="el-dialog__title">意见反馈</span><button type="button"
-                            aria-label="Close" class="el-dialog__headerbtn"><i
-                                class="el-dialog__close el-icon el-icon-close"></i></button></div>
-                    <!---->
-                    <!---->
-                </div>
-            </div>
-        </div>
-        <footer id="footer" class="page-footer" data-v-2002030c>
-            <div class="footer-wrap" data-v-2002030c>
-                <div class="container" data-v-2002030c>
-                    <section class="contact" data-v-2002030c>
-                        <h4 data-v-2002030c>联系我们</h4>
-                        <p data-v-2002030c>联系电话：8610-84599761</p>
-                        <p data-v-2002030c>联系邮箱：<a href="mailto:contact@geekpark.net" class="normal-link"
-                                data-v-2002030c>contact@geekpark.net</a></p>
-                        <p data-v-2002030c>公司地址：北京市朝阳区酒仙桥路4号751 D·Park<br data-v-2002030c>　　　　　正东集团院内 C8座105室 极客公园</p>
-                        <div data-track-category="follow" data-track-item="a.share-btn" data-v-2002030c><span
-                                style="color: #DCD900;" data-v-2002030c>关注我们：</span><a href="//weibo.com/geekpark"
-                                target="_blank" data-track-label="weibo" class="share-btn weibo" data-v-2002030c>
-                                <div class="iconfont icon-weibo" data-v-2002030c></div>
-                            </a><a href="https://www.zhihu.com/org/geekpark-16" target="_blank" data-track-label="zhihu"
-                                class="share-btn zhihu" data-v-2002030c>
-                                <div class="iconfont icon-zhihu" data-v-2002030c></div>
-                            </a><a href="javascript:;" data-track-label="wechat" class="share-btn wechat relative"
-                                data-v-2002030c>
-                                <div class="iconfont icon-wechat" data-v-2002030c></div>
-                                <div class="wechat-qr triangle-down" data-v-2002030c><img
-                                        src="//imgslim.geekpark.net/image/newgeekpark/qr_geekpark.jpg" alt="极客公园微信公众平台"
-                                        width="120" height="120" data-v-2002030c></div>
-                            </a><a href="http://feed.geekpark.net" target="_blank" data-track-label="rss"
-                                class="share-btn rss" data-v-2002030c>
-                                <div class="iconfont icon-rss" data-v-2002030c></div>
-                            </a></div>
+                            </a>
+                            <a href="http://feed.geekpark.net" target="_blank">
+                                <i class="iconfont icon-rss"></i>
+                            </a>
+                        </div>
                     </section>
-                    <section class="about" data-v-2002030c>
-                        <h4 data-v-2002030c>关于</h4>
-                        <p data-v-2002030c><a title="关于极客公园" href="/about" data-v-2002030c>关于极客公园</a></p>
-                        <p data-v-2002030c><a title="寻求报道" href="/report" data-v-2002030c>寻求报道</a></p>
-                        <p data-v-2002030c><a title="加入我们" href="/zhuanti/job/" data-v-2002030c>加入我们</a></p>
-                        <p data-v-2002030c><a title="友情链接" href="/about#links" data-v-2002030c>友情链接</a></p>
+                    <section class="about">
+                        <h4>关于</h4>
+                        <p><a title="关于极客公园" href="/about">关于极客公园</a></p>
+                        <p><a title="寻求报道" href="/report">寻求报道</a></p>
+                        <p><a title="加入我们" href="/zhuanti/job/">加入我们</a></p>
+                        <p><a title="友情链接" href="/about#links">友情链接</a></p>
                     </section>
-                    <section class="sponsor" data-v-2002030c>
-                        <h4 data-v-2002030c>云服务支持</h4>
-                        <ul class="list" data-v-2002030c>
-                            <li data-v-2002030c><a href="http://www.qiniu.com/" target="_blank" rel="nofollow"
-                                    data-v-2002030c><img height="24"
-                                        src="//imgslim.geekpark.net/image/newgeekpark/qiniu_1.png"
-                                        style="margin-left: -6px;" data-v-2002030c></a></li>
-                            <li data-v-2002030c><a href="https://www.qingcloud.com/" target="_blank" rel="nofollow"
-                                    data-v-2002030c><img height="25"
-                                        src="//imgslim.geekpark.net/image/newgeekpark/qingyun.png" data-v-2002030c></a>
+                    <section class="sponsor">
+                        <h4>云服务支持</h4>
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.qiniu.com/" target="_blank" rel="nofollow">
+                                    <img height="24" src="./images/logo/100002179.qiniu_1.png">
+                                </a>
                             </li>
-                            <li data-v-2002030c><a href="http://www.bokecc.com/" target="_blank" rel="nofollow"
-                                    data-v-2002030c><img height="25"
-                                        src="//imgslim.geekpark.net/image/newgeekpark/huode_scene_3.png"
-                                        class="huode_scene" data-v-2002030c></a></li>
+                            <li>
+                                <a href="https://www.qingcloud.com/" target="_blank" rel="nofollow">
+                                    <img height="25" src="./images/logo/100002212.qingyun.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.bokecc.com/" target="_blank" rel="nofollow">
+                                    <img height="25" src="./images/logo/100002245.huode_scene_3.png"
+                                        class="huode_scene">
+                                </a>
+                            </li>
                         </ul>
                     </section>
-                    <section class="down" data-v-2002030c>
-                        <h4 data-v-2002030c>APP下载</h4>
-                        <p style="text-align:center;" data-v-2002030c><img height="100"
-                                src="//imgslim.geekpark.net/image/newgeekpark/qr_app.gif" data-v-2002030c><br
-                                data-v-2002030c>iOS &amp; Android</p>
+                    <section class="down">
+                        <h4>APP下载</h4>
+                        <p style="text-align:center;">
+                            <img height="100" src="./images/erweima/100002278.qr_app.gif"><br>iOS &amp; Android
+                        </p>
                     </section>
                 </div>
             </div>
-            <div class="footer-copyright" data-v-2002030c>
-                <div class="container" data-v-2002030c>
-                    <div class="info-icp" data-v-2002030c><a href="https://beian.miit.gov.cn/" target="_blank"
-                            rel="nofollow" data-v-2002030c>京ICP备13016923号-2</a>  |  <a
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="info-icp">
+                        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">京ICP备13016923号-2</a>  |  <a
                             href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502034250"
-                            target="_blank" rel="nofollow" data-v-2002030c>京公网安备11010502034250号</a></div>
-                    <div class="info-copyright" data-v-2002030c>北京传奇极客管理咨询有限公司 Copyright © <span class="hidden-sm"
-                            data-v-2002030c>2009 - 2022</span></div>
+                            target="_blank" rel="nofollow">京公网安备11010502034250号</a>
+                    </div>
+                    <div class="info-copyright">
+                        北京传奇极客管理咨询有限公司 Copyright © 
+                        <span class="hidden-sm">2009 - 2022</span>
+                    </div>
                 </div>
             </div>
         </footer>
+        <!-- footer结束 -->
     </div>
 </body>
 
