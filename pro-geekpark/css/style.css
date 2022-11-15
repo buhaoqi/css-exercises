@@ -1,19 +1,20 @@
 /*  */
-:root{
-    --primary-color:#0185f2;
-    --white:#fff;
-    --black-100:#f6f6f6;
-    --black-300:#dcdcdc;
-    --black-500:#7d7d7d;
-    --black-800:#1e1e1e;
-    --black:#000;
-    --yellow:#dcd900;
+:root {
+    --primary-color: #0185f2;
+    --white: #fff;
+    --black-100: #f6f6f6;
+    --black-300: #dcdcdc;
+    --black-500: #7d7d7d;
+    --black-800: #1e1e1e;
+    --black: #000;
+    --yellow: #dcd900;
 }
+
 *,
 *::before,
-*::after{
-    margin:0;
-    padding:0;
+*::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,111 +22,188 @@ input,
 textarea {
     outline: none
 }
+
 img {
     vertical-align: bottom
 }
-a{
+
+a {
     text-decoration: none;
-    color:var(--black);
+    color: var(--black);
 }
-a:hover{
-    color:var(--primary-color);
+
+a:hover {
+    color: var(--primary-color);
 }
 
 /* 全局 */
-html,body{
+html{
+    font-size:62.5%;
+}
+body {
     font-family: Helvetica, Arial, PingFang SC, Hiragino Sans GB, Source Han Sans CN, Roboto, Microsoft Yahei, sans-serif;
     /* font-size:62.5%; */
-    font-size:16px;
+    font-size: 1.6rem;
     line-height: 1.6;
     overflow-x: hidden;
-    color:var(--black-800);
+    color: var(--black-800);
     background-color: var(--white);
 }
-#app{
+
+#app {
     color: var(--black);
     background-color: transparent;
-    width:100%;
+    width: 100%;
 }
-.container{
-    max-width:1130px;
-    margin:0 auto;
-}
-#header{
 
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
 }
-#header a{
-    color:var(--black);
-    font-weight:700;
-}
-#header a:hover,#header a.active{
-    color:var(--primary-color);
-}
-#main-body{
 
+#header {}
+
+#header a {
+    color: var(--black);
+    font-weight: 700;
 }
-#sub-nav{
+
+#header a:hover,
+#header a.active {
+    color: var(--primary-color);
+}
+
+#main-body {}
+
+#sub-nav {
     background-color: var(--black-100);
 }
-#sub-nav a{
-    color:var(--black-800);
-}
-#sub-nav a:hover{
-    color:var(--black);
-}
-#toutiao{
 
+#sub-nav a {
+    color: var(--black-800);
 }
-#main-content{
 
+#sub-nav a:hover {
+    color: var(--black);
 }
-#news-list{
 
-}
-#sidebar{
+#toutiao {}
 
+#main-content {}
+
+#news-list {}
+
+#sidebar {}
+
+#footer {
+    color: var(--black-500);
 }
-#footer{
-    color:var(--black-500);
+
+#footer a {
+    color: var(--black-500);
 }
-#footer a{
-    color:var(--black-500);
+
+#footer a:hover {
+    color: var(--white);
 }
-#footer a:hover{
-    color:var(--white);
-}
-#footer .footer-nav{
+
+#footer .footer-nav {
     background-color: var(--black-800);
 }
-#footer .footer-copyright{
+
+#footer .footer-copyright {
     background-color: var(--black);
 }
-.block-balck{
+
+.block-balck {
+    color: var(--white);
     background-color: var(--black);
 }
-.block-gray{
+
+.block-gray {
     background-color: var(--black-300);
 }
-/*  */
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    font-size:3rem;
+}
+h2{
+    font-size:2rem;
+}
+h3{
+    font-size:1.6rem;
+}
+p{
+    font-size:1.6rem;
+}
+.small-text{
+    font-size: 1.4rem;
+}
+/***************header.hide-small*************/
+header.hide-small {}
 
 
+/***************header.hide-big*************/
+.hide-big {
+    display: none;
+}
 
 
-/*  */
+/*************sub-nav***************/
 
 
+/**************toutiao**************/
+#toutiao .col,
+#toutiao .col .tt-item {
+    flex-basis: 50%;
+}
 
-/*  */
+#toutiao .tt-item {
+    position: relative;
+    ;
+}
+
+#toutiao .tt-text {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+}
 
 
+/************#main-content****************/
+#main-content .flex main {
+    /* width:855px; */
+    flex-basis: 855px;
+    background-color: pink;
+}
+
+#main-content .flex aside {
+    /* width:275px; */
+    flex-basis: 275px;
+    background-color: yellow;
+
+}
+
+/************news-list****************/
 
 
-/*  */
+/*************sidebar***************/
 
 
-
-/*  */
-
+/*************footer-nav***************/
 
 
-/*  */
+/*************footer-copyright***************/
+
+
+/****************************/
