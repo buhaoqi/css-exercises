@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        /* .container {
+            max-width: calc(100% - 20px);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .box {
+            padding-bottom: 10px;
+        }
+
+
+        @media screen and (min-width:576px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .box {
+                flex-basis: calc(50% - 5px);
+            }
+            .box5 {
+                flex: 0 1 100%;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .box1,.box2,.box3{
+                flex-basis: calc(33.33% - 6.6666666px);
+            }
+            .box4,.box5 {
+                flex-basis: calc(50% - 5px);
+            }
+        }
+        @media screen and (min-width:992px) {
+            .container {
+                max-width: calc(100% - 20px);
+            }
+            .box1,.box2,.box3,.box4{
+                flex-basis: calc(25% - 7.5px);
+            }
+            .box5 {
+                flex-basis: 100%;
+            }
+        }
+        @media screen and (min-width:1200px) {
+            .container{
+                max-width: 1130px;
+                flex-wrap: nowrap;
+                gap:10px;
+            }
+            .box{
+                flex-basis: auto!important;
+            }
+        } */
+
+        .container{
+            padding: .5vw;
+            /* display: -ms-flexbox; */
+            /* -ms-flex-wrap: wrap; */
+            /* -ms-flex-direction: column; */
+            /* -webkit-flex-flow: row wrap; */
+            flex-flow: row wrap;
+            /* display: -webkit-box; */
+            display: flex;
+        }
+
+        .container div {
+            /* -webkit-box-flex: auto; */
+            /* -ms-flex: auto; */
+            flex: auto; /*1 1 auto*/
+            width: 200px;
+            margin: .5vw;
+        }
+
+        /* .container div img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 400px) {
+            .container div {
+                margin: 0 0 1vw 0;
+            }
+
+            .container {
+                padding: 0;
+            }
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1"><img src='./images/tt1.jpg'></div>
+        <div class="box box2"><img src='./images/tt2.jpg'></div>
+        <div class="box box3"><img src='./images/tt3.jpg'></div>
+        <div class="box box4"><img src='./images/tt4.jpg'></div>
+        <div class="box box5"><img src='./images/tt5.jpg'></div>
+    </div>
+</body>
+
+</html>
