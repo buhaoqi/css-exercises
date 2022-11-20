@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>样式表的分类</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type='text/css' href='./css/style1.css' media='all'><!-- 外部样式表   -->
+    <link rel="stylesheet" type='text/css' href='./css/style2.css' media='all'>
+    <link rel="stylesheet" type='text/css' href='./css/style3.css' title="green" media='all'> <!-- 首选样式表  -->
+    <link rel="stylesheet" type='text/css' href='./css/style4.css' title="cyan" media='all'>
+    <link rel="alternate stylesheet" type='text/css' href='./css/style5.css' title="blue" media='all'><!-- 候选样式表   -->
+    <link rel="alternate stylesheet" type='text/css' href='./css/style6.css' title="purple" media='all'>
+    <style>/* 内部样式表 */
+      @import url(./css/style7.css);    /* 导入样式表：必须放在顶部，否则无效 */
+      body{
+        height:100vh;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1 style='color:red;'>Hello World!</h1><!-- 行间样式表   -->
+    <p>
+      锄禾日当午，汗滴禾下土；谁知盘中餐，粒粒皆辛苦。
+    </p>
+  </body>
+</html>
