@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .column{
+            border:1px solid blue;
+        }
+        .grid{
+            border:1px solid red;
+            display: grid;
+            grid-template-columns: 50px;
+        }
+        .grid1{
+            grid-template-columns: none;
+        }
+        .grid2{
+            grid-template-columns: 50px 150px;
+        }
+        .grid3{
+            grid-template-columns: 50px 150px 250px;
+        }
+        .grid4{
+            grid-template-columns: 20% 30% 40%;
+        }
+        .grid5{
+            grid-template-columns: auto auto auto auto;
+        }
+    </style>
+</head>
+<!-- 
+grid-template-columns: 指定列的数量和宽度。
+属性值：是一个空格分隔的列表，其中每个值指定相应列的大小。
+属性值：
+- none：没有明确的网格列
+- auto: 自动获取列尺寸。由列的内容的尺寸决定
+- max-content: 由当前列中最大的项目尺寸决定
+- min-content: 由当前列中最小的项目尺寸决定
+- length：使用长度值设置列的尺寸
+
+
+ -->
+<body>
+    <div class="grid">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+    <div class="grid">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+    <div class="grid grid2">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+    <div class="grid grid3">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+    <div class="grid grid4">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+    <div class="grid grid5">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+    <div class="grid grid6">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+    <div class="grid grid7">
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+        <div class="column">col1</div>
+    </div>
+</body>
+</html>
