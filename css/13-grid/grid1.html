@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333;
+        }
+        .container{
+            height:800px;
+            background-color: pink;
+            /* 1. 定义网格容器。 */
+            display:grid;
+            /* 2. 定义显式网格数量和宽度。 */
+            grid-template-columns:100px 100px 100px;
+            /* 2. 定义显式网格的数量和高度。 */
+            grid-template-rows:100px 100px 100px;
+            /* 3. 定义隐式网格间距 */
+            gap:10px;
+            /* 3. 定义隐式网格水平间距 */
+            column-gap: 10px;
+            /* 3. 定义隐式网格垂直间距 */
+            row-gap: 10px;
+
+            /* 4. 定义隐式网格宽度 */
+            /* grid-auto-columns: 200px 300px; */
+            /* 4. 定义隐式网格高度 */
+            /* grid-auto-rows:350px ; */
+
+            /* 5. 定义网格的行轴对齐方式  */
+            justify-content: start;
+            /* 5. 定义网格的列轴的对齐方式 */
+            align-content: start;
+
+            /* 6. 定义网格项目的行轴对齐方式  */
+            justify-items: end;
+            /* 6. 定义网格项目列轴对齐方式  */
+            align-items: center;
+            
+            /* 7.  */
+            grid-area
+            /* grid-column-start: ;
+            grid-column-end: ;
+            grid-column: ; 
+
+            grid-row-start: ;
+            grid-row-end: ;
+            grid-row: ; 
+            
+            
+        */
+        }
+        .item{
+            /* width:50px; */
+            /* height:50px; */
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">itme 1</div>
+        <div class="item item2">itme 2</div>
+        <div class="item item3">itme 3</div>
+        <div class="item item4">itme 4</div>
+        <div class="item item5">itme 5</div>
+        <div class="item item6">itme 6</div>
+        <div class="item item7">itme 7</div>
+        <div class="item item8">itme 8</div>
+        <div class="item item9">itme 9</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+1. 网格容器
+2. 网格项目
+3. 网格线：用于定义隐式网格轨道的线。
+4. 显式网格：grid-template开头的都是定义显示网格。
+5. 隐式网格：是通过隐式网格线创建的。
+6. 网格单元：就是显示网格。使用grid-template-定义的单元格。
+
+
+Aligns grid items along the block (column) axis (as opposed to 
+
+justify-items 
+
+which aligns along the inline (row) axis). This value applies to all grid items inside the container.
+
+
+Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. 
+
+justify-content
+This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
+ -->
