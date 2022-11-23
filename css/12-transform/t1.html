@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* transition: 2s; */
+        }
+        .c1{
+            /* z轴是垂直屏幕的轴 */
+            /* perspective指定z轴原点到屏幕的距离 */
+            /* 大透视 小变换 小透视 大变换 */
+            /* perspective: 100px; */
+        }
+        .c1:hover .square{
+            transform:translateZ(100px);
+        }
+        .c2{
+            perspective: 100px;
+        }
+        .c2:hover .square{
+            transform: rotateX(45deg);
+            transform: rotateY(45deg);
+            transform: rotateZ(45deg);
+        }
+        .c3{
+            perspective: 100px;
+            perspective-origin: left bottom;
+        }
+        .c3 .square{
+            /* transform:scaleX(3); */
+            /* transform:scaleY(3); */
+            transform: scaleZ(2) translateZ(20px);
+        }
+        .c4{
+            perspective: 100px;
+        }
+        .c4 .square{
+            /* transform:scaleX(3); */
+            /* transform:scaleY(3); */
+            transform:  translateZ(40px);
+        }
+        .c5{
+            perspective: 100px;
+        }
+        .c5 .square{
+            transform:  skewX(40px);
+            transform:  skewY(40px);
+            /* transform:  skewZ(40px); */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container c1">
+        <div class="square"></div>
+    </div>
+    <div class="container c2">
+        <div class="square"></div>
+    </div>
+    <div class="container c3">
+        <div class="square"></div>
+    </div>
+    <div class="container c4">
+        <div class="square"></div>
+    </div>
+    <div class="container c5">
+        <div class="square"></div>
+    </div>
+    <div class="container c6">
+        <div class="square"></div>
+    </div>
+    <div class="container c7">
+        <div class="square"></div>
+    </div>
+</body>
+
+</html>
