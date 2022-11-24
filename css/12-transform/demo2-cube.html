@@ -27,7 +27,7 @@
             align-items: center;
             font-size: 75px;
             perspective: 10em ;
-            perspective-origin: 50% calc(50% - 2em);
+            perspective-origin: 50% calc(50% - 3em);
         }
         .scene{
             position:relative;
@@ -58,34 +58,39 @@
             sceneRotate var(--rotateSpeed) infinite linear reverse;  
         }
         @keyframes ballBounce {
-            0%,100%{bottom: .9em;}
+            0%,100%{bottom: .3em;}
             50% {bottom:3em; animation-timing-function: ease-in;}
         }
-        .ball-shadow{
-            position:absolute;
-            width:100%;
-            height: 100%;
-            background-image: radial-gradient(#0007,#0000);
-            animation:ballShadow var(--bounceSpeed) infinite ease-out;
-        }
+        
+        
+        
         @keyframes ballShadow {
             0%,100%{ transform: scale(1 ); opacity: 1;}
             50% {transform: scale(2); opacity: .5; animation-timing-function: ease-in;}
         }
+        .ball-shadow{ 
+            position:absolute;
+            /* left:    */
+            width:100%;
+            height: 100%;
+            background-image: radial-gradient(#0007,#0000 50%);
+            animation:ballShadow var(--bounceSpeed) infinite ease-out;
+        }
+        @keyframes cubeHeight {
+            0%,100%{ height: 1.5em;}
+            8%,93.5% { height:2em;}
+        }
         .cube{ 
             width: 2em;
-            height: 2 em;
+            height: 2em;
             background-color: var(--boxcolor);
             position: absolute;
-            left: -1em;
-            top: -1em;
+            left: -1em; 
+            bottom: -1em;  
             color:yellow;
             transform-style: preserve-3d;
             text-align: center;
-        }
-        .cube:hover{
-            /* transform: rotateX(360deg) rotateY(360deg); */
-            /* transform: rotate3d(1,1,1,360deg) */
+            animation: cubeHeight var(--bounceSpeed) infinite linear;
         }
         .left,.right,.front,.back{
             position: absolute;
@@ -113,6 +118,7 @@
             background-color: var(--boxcolor);
             transform:translateY(-50%) rotateX(90deg);
         }
+        
         .bottom{
             position:absolute;
             width:2em;  
@@ -151,12 +157,12 @@
             <div class="back">后</div>
             <div class="left">左</div>
             <div class="right">右</div>
-            <div class="top">顶</div>
+            <div class="top">
+                <div class="ball-shadow"></div>
+            </div>
             <div class="bottom">底</div>
         </div>
-        <div class="ball">
-            <div class="ball-shadow"></div>
-        </div>
+        <div class="ball"></div>
     </div>
 </body>
 </html>
