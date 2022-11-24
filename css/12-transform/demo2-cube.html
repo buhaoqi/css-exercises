@@ -7,39 +7,78 @@
     <title>Document</title>
     <style>
         
-        *{
+        *{ 
             padding:0;
             margin:0 auto;
             box-sizing: border-box;
         }
         :root {
-            --boxcolor: #0ff7;
+            --boxcolor: #0ff7; 
+            --rotateSpeed:30s; 
+            --bounceSpeed:1s; 
         }
 
         body {
             background-color: #000;
             min-height: 100vh;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 75px;
-            /* perspective: 10em; */
+            perspective: 10em ;
             perspective-origin: 50% calc(50% - 2em);
         }
         .scene{
             position:relative;
-            transform-style: preserve-3d;
-            border:10px solid red;
-            transform: rotateX(20deg) rotateY(20deg) ;
-            /* transition:5s; */
+            transform-style: preserve-3d; 
+            animation: 
+            sceneRotate var(--rotateSpeed) infinite linear; 
+            /* transform: rotateX(0deg) rotateY(20deg) ; */
         }
-        .cube{
-            width: 4em;
-            height: 4em;
+        @keyframes sceneRotate {
+            to { transform: rotateY(360deg );}
+        }
+        
+        .ball{
+            width:1em;
+            height:1em;
+            border-radius: 50%;
+            background-color: lightblue;
+            position:absolute;
+            left:-.5em;
+            bottom:1em;
+            background-image: radial-gradient( 
+                circle at top,
+                lightblue,
+                #000
+            );
+            animation: 
+            ballBounce var(--bounceSpeed) infinite ease-out,
+            sceneRotate var(--rotateSpeed) infinite linear reverse;  
+        }
+        @keyframes ballBounce {
+            0%,100%{bottom: .9em;}
+            50% {bottom:3em; animation-timing-function: ease-in;}
+        }
+        .ball-shadow{
+            position:absolute;
+            width:100%;
+            height: 100%;
+            background-image: radial-gradient(#0007,#0000);
+            animation:ballShadow var(--bounceSpeed) infinite ease-out;
+        }
+        @keyframes ballShadow {
+            0%,100%{ transform: scale(1 ); opacity: 1;}
+            50% {transform: scale(2); opacity: .5; animation-timing-function: ease-in;}
+        }
+        .cube{ 
+            width: 2em;
+            height: 2 em;
             background-color: var(--boxcolor);
             position: absolute;
-            left: -2em;
-            top: -2em;
+            left: -1em;
+            top: -1em;
             color:yellow;
             transform-style: preserve-3d;
             text-align: center;
@@ -48,90 +87,55 @@
             /* transform: rotateX(360deg) rotateY(360deg); */
             /* transform: rotate3d(1,1,1,360deg) */
         }
-        .left,
-        .right,
-        .front,
-        .back {
+        .left,.right,.front,.back{
             position: absolute;
-            width: 100%;
-            height: 100%;
-            
+            width: 2em; 
+            height: 2em;
             background-color: var(--boxcolor);
-        }
-        .left{
-            transform:translateX(-2em) rotateY(90deg);
-        }
-        .right{
-            transform:translateX(2em) rotateY(90deg);
+            box-shadow: 0 0 .5em #000a inset;
         }
         .front {
-            transform: translateZ(2em) ;
+            transform: translateZ(1em) ;
+        }
+        .right{
+            transform: translateX(1em) rotateY(90deg) ;
         }
         .back{
-            transform: translateZ(-2em)   ;
+            transform: translateZ(-1em) rotateY(180deg)  ;
+        }
+         .left{
+            transform:translateX(-1em) rotateY(270deg);
         }
         .top{
-            transform:translateX(-2em) rotateX(90deg);
-        }
-        .bottom{
-            transform:translateX(2em) rotateX(90deg);
-        }
-        /* .front {
-            transform: translateZ(2em) rotateX(180deg);
-        }
-        
-        .right{
-            transform: translateZ(2em) rotateY(90deg) ;
-        }
-        
-        
-        .bottom{
-            transform: translateY(150px) rotateX(90deg) ;
-        }
-        .top{
-            transform: translateY(-150px) rotateX(90deg) ;
-        } */
-        /* .cube div{
-            width:100%;
-            height:100%;
             position:absolute;
-            left:0;
-            top:0;
-            font-size:120px;
-            text-align: center;
-            opacity:.6;
+            width:2em;
+            height:2em;
             background-color: var(--boxcolor);
-        }
-        .left{
-            transform: translateX(-150px) rotateY(90deg) ;
-        }
-        .right{
-            transform: translateX(150px) rotateY(90deg) ;
-        }
-        .top{
-            transform: translateY(-150px) rotateX(90deg) ;
+            transform:translateY(-50%) rotateX(90deg);
         }
         .bottom{
-            transform: translateY(150px) rotateX(90deg) ;
+            position:absolute;
+            width:2em;  
+            height:2em;
+            background-color: #0007;
+            transform:translateY(50%) rotateX(90deg);
+            box-shadow: 0 0 .5em #000a inset;
         }
-        .front{
-            transform: translateZ(150px)  ;
-        }
-        .back{
-            transform: translateZ(-150px)  ;
-        } */
-        .floor {
-            width: 1000px;
-            height:1000px;
+        
+        .floor {    
+            width: 15em;
+            height:15em ;
             position: absolute;
-            /* z-index: -10; */
-            top: 4em;
+            top: 1em;
             transform:
-                translate(-50%, -50%) ;
-            background-image: repeating-conic-gradient(from 0deg,
+                translate(-50%, -50%) 
+                rotateX(90deg );
+            background-image: radial-gradient(#0000,#000 75% ),
+                repeating-conic-gradient(
+                    from 45deg,
                     #111 0deg 90deg,
                     #222 90deg 180deg);
-            background-size: 1em 1em;
+            background-size: 100%,  1em 1em;
         }
         
     </style>
@@ -141,15 +145,18 @@
 </head>
 <body>
     <div class="scene">
+        <div class="floor"></div>
         <div class="cube">
             <div class="front">前</div>
             <div class="back">后</div>
             <div class="left">左</div>
             <div class="right">右</div>
-            <div class="top">上</div>
-            <div class="bottom">下</div>
+            <div class="top">顶</div>
+            <div class="bottom">底</div>
         </div>
-        <div class="floor"></div>
+        <div class="ball">
+            <div class="ball-shadow"></div>
+        </div>
     </div>
 </body>
 </html>
